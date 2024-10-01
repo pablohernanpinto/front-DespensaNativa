@@ -26,6 +26,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { BodyCatalogoComponent } from './components/body-catalogo/body-catalogo.component';
 import { BodyOfertaComponent } from './components/body-oferta/body-oferta.component';
+import { BodyRecetasComponent } from './components/body-recetas/body-recetas.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { BodyOfertaComponent } from './components/body-oferta/body-oferta.compon
     HeaderComponent,
     BodyComponent,
     BodyCatalogoComponent,
-    BodyOfertaComponent
+    BodyOfertaComponent,
+    BodyRecetasComponent,
+    FooterComponent
   ],
   imports: [
     ReactiveFormsModule ,

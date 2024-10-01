@@ -1,0 +1,59 @@
+.Titulo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.tituloImagen{
+    width:  3000px;
+}
+
+
+.presionables{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+
+
+.botonesBarra{
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente si es necesario */
+    gap: 5px; /* Espacio entre el icono y el texto */
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Tamaño del texto */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Añade una transición suave para transformaciones y sombras */
+
+}
+.iconos{
+    padding-inline: 20px;
+    width: 400px;
+}
+.botonesBarra p {
+    margin: 0; /* Elimina el margen del texto */
+    color: white;
+    
+}
+
+.botonesBarra:hover {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+  
+/* Estilo cuando el botón está en estado "activo" */
+.botonesBarra.active {
+    transform: scale(1.05); /* Escala el botón ligeramente para que parezca presionado */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para darle profundidad */
+}
+  
+  /* Estilo cuando se está presionando */
+.botonesBarra:active {
+    transform: scale(0.95); /* Hace que el botón parezca que se hunde cuando lo presionas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra al presionar */
+}
