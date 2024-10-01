@@ -1,0 +1,155 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.botonInicioCrear {
+    background-color: white;
+    color: #607c31;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente si es necesario */
+    gap: 8px; /* Espacio entre el icono y el texto */
+    padding: 15px 20px; /* Aumenta el padding para que haya más espacio dentro del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 25px; /* Tamaño del texto */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Añade una transición suave para transformaciones y sombras */
+
+}
+
+.botonInicioCrear p {
+    margin: 0; /* Elimina el margen del texto */
+}
+
+.botonInicioCrear mat-icon {
+    font-size: 40px; /* Tamaño del ícono */
+    width: 40px; /* Asegúrate de que el contenedor del icono sea lo suficientemente grande */
+    height: 40px; /* Ajusta la altura para que coincida */
+}
+
+.toolbar {
+    color: #fefffe;
+    background-color: white;
+    height: 130px; /* Altura de la toolbar */
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    padding: 0 20px; /* Espacio dentro de la toolbar */
+}
+
+.logo {
+    height: 140px; /* Ajusta el tamaño del logo */
+}
+
+.buscar{
+    background-color: #607c31;
+    border: 0;
+    height: 56px;
+    width: 60px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Añade una transición suave para transformaciones y sombras */
+
+}
+
+/* Estilo hover normal */
+.botonInicioCrear:hover {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+  
+/* Estilo cuando el botón está en estado "activo" */
+.botonInicioCrear.active {
+    transform: scale(1.05); /* Escala el botón ligeramente para que parezca presionado */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para darle profundidad */
+}
+  
+  /* Estilo cuando se está presionando */
+.botonInicioCrear:active {
+    transform: scale(0.95); /* Hace que el botón parezca que se hunde cuando lo presionas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra al presionar */
+}
+
+.center-element {
+    display: flex;
+    text-align: center; /* Centra el texto del elemento */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #607c31; /* Color del texto */
+    margin: 0 20px; /* Margen lateral para separación */
+}
+
+
+.searchIcon{
+    color: white;
+    font-size: 30px; /* Tamaño del ícono */
+
+}
+
+/* Estilo hover normal */
+.buscar:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave al pasar el mouse */
+  }
+  
+/* Estilo cuando el botón está en estado "activo" */
+.buscar.active {
+    transform: scale(1.05); /* Escala el botón ligeramente para que parezca presionado */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para darle profundidad */
+}
+  
+  /* Estilo cuando se está presionando */
+.buscar:active {
+    transform: scale(0.95); /* Hace que el botón parezca que se hunde cuando lo presionas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra al presionar */
+}
+
+.center-element {
+    display: flex;
+    text-align: center; /* Centra el texto del elemento */
+    font-size: 20px; /* Tamaño de fuente */
+    color: #607c31; /* Color del texto */
+    margin: 0 20px; /* Margen lateral para separación */
+}
+
+
+.toolbarBottom{
+    color: #fefffe;
+    background-color: #bdcb44;
+    height: 90px; /* Altura de la toolbar */
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    padding: 0 20px; /* Espacio dentro de la toolbar */
+}
+
+.botonesBarra{
+    background-color: #bdcb44;
+    color: #607c31;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente si es necesario */
+    gap: 5px; /* Espacio entre el icono y el texto */
+    padding: 32px 30px; /* Aumenta el padding para que haya más espacio dentro del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Tamaño del texto */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Añade una transición suave para transformaciones y sombras */
+
+}
+
+.botonesBarra p {
+    margin: 0; /* Elimina el margen del texto */
+    color: white;
+    
+}
+
+
+  
+/* Estilo cuando el botón está en estado "activo" */
+.botonesBarra.active {
+    transform: scale(1.05); /* Escala el botón ligeramente para que parezca presionado */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para darle profundidad */
+}
+  
+  /* Estilo cuando se está presionando */
+.botonesBarra:active {
+    transform: scale(0.95); /* Hace que el botón parezca que se hunde cuando lo presionas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra al presionar */
+}

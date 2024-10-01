@@ -1,0 +1,78 @@
+
+.bodyFirst{
+    flex-direction: row;
+    background-color: rgb(230, 230, 230);
+    height: 750px;
+    display: flex; /* Opción: usar flexbox si es necesario */
+    align-items: flex-start; /* Alinear elementos al inicio */
+    justify-content: flex-start; /* Alinear elementos al inicio */
+}
+
+.imagenProductos{
+    height: 800px;
+}
+
+.cuidamosTuSalud {
+    height: 300px;
+
+
+}
+
+.right{
+    
+    display: block; /* Asegura que la imagen no tenga espacios inferiores */
+    margin: auto; /* Centra la imagen horizontalmente */
+    position: relative; /* Necesario para centrar verticalmente en la mitad */
+    top: 15%; /* Mueve la imagen al centro verticalmente */
+    transform: translateY(-20%); /* Ajusta la posición vertical para centrarla */
+    display: flex; /* Habilita Flexbox para el contenedor */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente, si es necesario */
+    height: 100%; /* Asegúrate de que el contenedor ocupe la altura total disponible */
+}
+
+
+.botonesBarra{
+    border-radius: 10px;
+    background-color: #bdcb44;
+    color: #607c31;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Centra los elementos horizontalmente si es necesario */
+    gap: 5px; /* Espacio entre el icono y el texto */
+    padding: 15px 30px; /* Aumenta el padding para que haya más espacio dentro del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Tamaño del texto */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Añade una transición suave para transformaciones y sombras */
+
+}
+
+.botonesBarra p {
+    margin: 0; /* Elimina el margen del texto */
+    color: white;
+    
+}
+
+
+  
+/* Estilo cuando el botón está en estado "activo" */
+.botonesBarra.active {
+    transform: scale(1.05); /* Escala el botón ligeramente para que parezca presionado */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para darle profundidad */
+}
+  
+  /* Estilo cuando se está presionando */
+.botonesBarra:active {
+    transform: scale(0.95); /* Hace que el botón parezca que se hunde cuando lo presionas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Reduce la sombra al presionar */
+}
+
+.adorno {
+    position: absolute; /* Habilita el posicionamiento absoluto */
+    top: 5; /* Alinea al borde superior */
+    right: 0; /* Alinea al borde derecho */
+    height: 200px; /* Mantiene la proporción de la imagen */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+}

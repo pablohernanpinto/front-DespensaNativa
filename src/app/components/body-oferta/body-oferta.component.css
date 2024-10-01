@@ -1,0 +1,13 @@
+
+
+.image-container {
+    background-color: #498930;
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+
+
+}
+
+.imageOferta {
+    width: 100%; /* Mantener la proporción de la imagen */
+}

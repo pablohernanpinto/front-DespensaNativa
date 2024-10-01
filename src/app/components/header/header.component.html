@@ -1,0 +1,68 @@
+<div class="toolbar">
+    <img class="logo" src="./../../../assets/logo.png" alt="logo">
+    <span class="example-spacer"></span>
+
+    <!-- Elemento que deseas centrar -->
+    <div class="center-element">
+
+        <form class="categorias">
+            <mat-form-field class="example-full-width">
+                <mat-label>Todas las categorias</mat-label>
+                <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl"
+                    [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                        {{ option }}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </form>
+
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <mat-label>¿Qué estas buscando?</mat-label>
+                <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl"
+                    [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                        {{ option }}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </form>
+
+        <button class="buscar">
+            <mat-icon class="searchIcon">search</mat-icon>
+        </button>
+
+    </div>
+
+    <span class="example-spacer"></span> <!-- Agregar otro espaciador si es necesario -->
+
+    <button class="botonInicioCrear">
+        <mat-icon>person</mat-icon>
+        <p>Ingresar</p>
+        <p>/</p>
+        <p>Crear cuenta</p>
+        <mat-icon>shopping_cart</mat-icon>
+    </button>
+</div>
+
+<div class="toolbarBottom">
+    <button class="botonesBarra">
+        <p>Inicio</p>
+    </button>
+
+    <button class="botonesBarra">
+        <p>¿Quienes somos?</p>
+    </button>
+
+    <button class="botonesBarra">
+        <p>Misión y visión</p>
+    </button>
+
+    <button class="botonesBarra">
+        <p>Productos</p>
+    </button>
+</div>
